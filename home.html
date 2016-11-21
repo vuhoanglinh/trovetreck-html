@@ -1,0 +1,646 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TroveTrek</title>
+        <!-- meta tag seo -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Favicons -->
+        <link rel="shortcut icon" type='image/x-icon' href="images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+        <link rel="apple-touch-icon-precomposed" href="">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <!-- font awesome -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/flag-icon.css">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/color.css">
+        <link rel="stylesheet" type="text/css" href="css/utilities.css">
+    </head>
+    <body>
+        <!--main naviagtion begin -->
+        <nav class="navigation topbar bg-gray">
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default navbar-static-top no-magin">
+                            <div class="navbar-header header-block">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand logo" href="#">
+                                    <img class="img-responsive" src="images/logo.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <form class="col-xs-12 input-group search">
+                                            <input class="form-control form-search" type="text">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-danger" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </form>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter <span class="caret"></span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="flag-icon flag-icon-ad"></i> English</a></li>
+                                            <li><a href="#"><i class="flag-icon flag-icon-vn"></i> Vietnamese</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USD <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-usd"></i> USD</a></li>
+                                            <li><a href="#"><i class="fa fa-rupee"></i> Rupee</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Worldwide <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="flag-icon flag-icon-ag"></i> Argentina</a></li>
+                                            <li><a href="#"><i class="flag-icon flag-icon-vn"></i> Vietnamese</a></li>
+                                            <li class="more-worldwide text-center"><a href="#" >More Country <i class="fa fa-angle-right"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <div class="cart-block  hidden-xs">
+                                            <i class="fa fa-shopping-cart"></i>(0)
+                                        </div>
+                                    </li>
+                                    <li><a class="" href="">Sign in</a></li>
+                                    <li><a href="">Upload</a></li>
+                                </ul>
+
+                            </div><!--/.nav-collapse -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--main naviagtion end -->
+        <div class="clearfix"></div>
+        <!-- content begin -->
+        <section class="container main-content">
+            <div class="Featured-block">
+                <div class="col-sm-12">
+                    <div class="row pd20">
+                        <a href="">
+                            <h2 class="block-title">Featured <i class="fa fa-caret-right"></i> </h2>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product1.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nixplay Edge 13-Inch Wi-Fi Cloud Digital Photo...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product2.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nikon COOLPIX L840 Digital Camera with 38x Optical...</a>
+                                </div>
+                                <div class="price">
+                                    166.95 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product3.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">SKLZ Med Ball</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product4.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Garmin fenix 3 GPS Watch, Gray</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product5.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">ASUS ZenFone 2 Laser Unlocked Smartphone,...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Following-block">
+                <div class="col-sm-12">
+                    <div class="row pd20">
+                        <a href="">
+                            <h2 class="block-title">Following <i class="fa fa-caret-right"></i> </h2>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product6.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nixplay Edge 13-Inch Wi-Fi Cloud Digital Photo...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product7.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nikon COOLPIX L840 Digital Camera with 38x Optical...</a>
+                                </div>
+                                <div class="price">
+                                    166.95 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product8.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">SKLZ Med Ball</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product9.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Garmin fenix 3 GPS Watch, Gray</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product10.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">ASUS ZenFone 2 Laser Unlocked Smartphone,...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Promoted-block">
+                <div class="col-sm-12">
+                    <div class="row pd20">
+                        <a href="">
+                            <h2 class="block-title">Promoted <i class="fa fa-caret-right"></i> </h2>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="user-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb150x150/avatar1.jpg" alt=""></a>
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="user-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb150x150/avatar2.jpg" alt=""></a>
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="user-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb150x150/avatar3.jpg" alt=""></a>
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="user-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb150x150/avatar4.jpg" alt=""></a>
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="user-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb150x150/avatar5.jpg" alt=""></a>
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Newest-block">
+                <div class="col-sm-12">
+                    <div class="row pd20">
+                        <a href="">
+                            <h2 class="block-title">Newest <i class="fa fa-caret-right"></i> </h2>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product1.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nixplay Edge 13-Inch Wi-Fi Cloud Digital Photo...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product2.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nikon COOLPIX L840 Digital Camera with 38x Optical...</a>
+                                </div>
+                                <div class="price">
+                                    166.95 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product3.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">SKLZ Med Ball</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product4.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Garmin fenix 3 GPS Watch, Gray</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product5.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">ASUS ZenFone 2 Laser Unlocked Smartphone,...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Trending-block">
+                <div class="col-sm-12">
+                    <div class="row pd20">
+                        <a href="">
+                            <h2 class="block-title">Trending <i class="fa fa-caret-right"></i> </h2>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product6.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nixplay Edge 13-Inch Wi-Fi Cloud Digital Photo...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive"  src="images/thumb200x200/product7.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Nikon COOLPIX L840 Digital Camera with 38x Optical...</a>
+                                </div>
+                                <div class="price">
+                                    166.95 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product8.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">SKLZ Med Ball</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product9.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">Garmin fenix 3 GPS Watch, Gray</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-15">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href=""><img class="img-responsive" src="images/thumb200x200/product10.jpg" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">ASUS ZenFone 2 Laser Unlocked Smartphone,...</a>
+                                </div>
+                                <div class="price">
+                                    159.99 USD
+                                </div>
+                                <div class="name-user">
+                                    <i class="fa fa-square"></i> WilfredSmith
+                                </div>
+                                <div class="country">
+                                    America
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- content begin -->
+        <div class="clearfix"></div>
+        <!-- footer end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <ul class="list-inline menu-bottom">
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Affiliate</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <button class="btn btn-default btn-lg bg-gray">
+                            SHOW ME A RANDOM LISTING
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <a class="logo-bottom text-center pull-right" href="#">
+                            <img class="img-responsive" src="images/logo.jpg" alt="" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- js -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <!-- js end -->
+    </body>
+</html>

@@ -1,0 +1,781 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TroveTrek</title>
+        <!-- meta tag seo -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- You can use Open Graph tags to customize link previews.
+        Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+        <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Your Website Title" />
+        <meta property="og:description"   content="Your description" />
+        <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+        
+        <!-- Favicons -->
+        <link rel="shortcut icon" type='image/x-icon' href="images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+        <link rel="apple-touch-icon-precomposed" href="">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <!-- font awesome -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/flag-icon.css">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/color.css">
+        <link rel="stylesheet" type="text/css" href="css/utilities.css">
+
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="js/magnific-popup/magnific-popup.css">
+        <!-- Cloud Zoom core CSS file -->
+        <link rel="stylesheet" href="js/cloud-zoom/cloud-zoom.css">        
+        <!-- Rating core CSS file -->
+        <link rel="stylesheet" href="js/raty/jquery.raty.css">        
+        <!-- See closing body for JS -->
+        <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+    </head>
+    <body>
+        <!--main naviagtion begin -->
+        <nav class="navigation topbar bg-gray">
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default navbar-static-top no-magin">
+                            <div class="navbar-header header-block">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand logo" href="#">
+                                    <img class="img-responsive" src="images/logo.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <form class="col-xs-12 input-group search">
+                                            <input class="form-control form-search" type="text">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-danger" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </form>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter <span class="caret"></span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="flag-icon flag-icon-ad"></i> English</a></li>
+                                            <li><a href="#"><i class="flag-icon flag-icon-vn"></i> Vietnamese</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USD <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-usd"></i> USD</a></li>
+                                            <li><a href="#"><i class="fa fa-rupee"></i> Rupee</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Worldwide <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="flag-icon flag-icon-ag"></i> Argentina</a></li>
+                                            <li><a href="#"><i class="flag-icon flag-icon-vn"></i> Vietnamese</a></li>
+                                            <li class="more-worldwide text-center"><a href="#" >More Country <i class="fa fa-angle-right"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <div class="cart-block  hidden-xs">
+                                            <i class="fa fa-shopping-cart"></i>(0)
+                                        </div>
+                                    </li>
+                                    <li><a class="" href="">Sign in</a></li>
+                                    <li><a href="">Upload</a></li>
+                                </ul>
+
+                            </div><!--/.nav-collapse -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--main naviagtion end -->
+        <div class="clearfix"></div>
+        <!-- content begin -->
+        <section class="container main-content">
+            <!-- product detail begin -->
+            <div class="row wapper-content">
+
+                <!-- product preview left begin -->
+                <div class="product_preview_left">
+                    <div class="gallery">
+                        <div class="full">
+                            <a href="images/thumb479x479/1.jpg" class="cloud-zoom"  rel="adjustX:10, adjustY:-4"><img class="zoom-tiny-image" src="images/thumb479x479/1.jpg">
+                            </a>
+                        </div>
+                        <div class="previews">
+                            <div class="img">
+                                <a class="selected" href="images/thumb479x479/1.jpg">
+                                <img src="images/thumb70x70/1.jpg"></a> 
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/2.jpg">
+                                <img src="images/thumb70x70/2.jpg"></a>
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/3.jpg">
+                                <img src="images/thumb70x70/3.jpg"></a>
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/4.jpg">
+                                <img src="images/thumb70x70/4.jpg"></a>
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/5.jpg">
+                                <img src="images/thumb70x70/5.jpg"></a>
+                            </div>
+
+                            <div class="img">
+                                <a href="images/thumb479x479/5.jpg">
+                                <img src="images/thumb70x70/5.jpg"></a> 
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/4.jpg">
+                                <img src="images/thumb70x70/4.jpg"></a>
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/3.jpg">
+                                <img src="images/thumb70x70/3.jpg"></a>
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/2.jpg">
+                                <img src="images/thumb70x70/2.jpg"></a>
+                            </div>
+                            <div class="img">
+                                <a href="images/thumb479x479/1.jpg">
+                                <img src="images/thumb70x70/1.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <iframe width="480" height="360" src="https://www.youtube.com/embed/DcUBBSERreQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>    
+                <!-- product preview left end -->
+
+                <!-- product info right begin -->
+                <div class="product_info_right">
+                    <h2 class="product_title">Case Logic DCB-304 Compact System/Hybrid Camera Case (Black)</h2>
+                    <div class="product_rating">
+                        <div class="rating">    
+                            <div class="rate">
+                                <span class="field"> Product Review: </span>
+                                <div class="raty" score="4.3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_user">
+                        <div class="user-avatar">
+                            <img src="images/thumb40x40/user1.jpg">
+                        </div>
+                        <div class="user-info">
+                            <h4 class="name-user">
+                                <span class="tick"><i class="fa fa-square"></i></span> 
+                                WilfredSmith
+                            </h4>
+                            <div class="user-country">American</div>
+                            <div class="rating">    
+                                <div class="raty-blue" score="4.5"></div>
+                            </div> 
+                        </div>
+                        <div class="user-action">
+                            <button class="btn">Chat</button>
+                            <button class="btn" data-loading-text="Loading..." data-complete-text="Following" action="follow" object='{"product_id":1}' follow="0">Follow</button>
+                        </div>
+                    </div>
+                    <div class="product_desctiption">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <ul>
+                            <li>Camera bag compatible with most compact system, hybrid and high zoom cameras</li>
+                            <li>Quality materials and logical organization ensure your camera is stored safely inside, yet instantly accessible</li>
+                            <li>A flex wall inside camera case separates accessories from camera and provides added protection when not in use</li>
+                            <li>Side zippered pockets store an extra battery, cables, lens cap, or small accessories</li>
+                            <li>Slip pocket inside camera case separates accessories from camera</li>
+                            <li>Integrated belt loop, padded handle and removable shoulder strap offer multiple carrying options</li>
+                            <li>Product Dimensions - 7.5" (l) x 4.75" (w) x 7" (h)s</li>
+                            <li>Fits Devices - 5.8" (l) x 3" (w) x 4.6" (h)</li>
+                            <li>Materials - Polyester</li>
+                            <li>Weight - 0.5 LB</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="product_price">
+                        <div class="price big">
+                            <span>Price:</span>65.62 USD 
+                        </div>
+                        <div class="price">
+                            <span>About:</span> 320.000 VND
+                        </div>
+                    </div>
+
+                    <div class="product_shipping">
+                        <strong>FREE Shipping.</strong> <a href="">Details</a>
+                    </div>
+
+                    <div class="product_payment">
+                        <span>Acceptable payment methods:</span>
+                        <ul class="list-inline">
+                          <li><img src="images/icons/visa.jpg"></li>
+                          <li><img src="images/icons/mastercard.jpg"></li>
+                          <li><img src="images/icons/jcb.jpg"></li>
+                          <li><img src="images/icons/discover.jpg"></li>
+                          <li><img src="images/icons/paypal.jpg"></li>
+                        </ul>
+                    </div>
+
+                    <div class="product_cart">
+                        <button class="btn btn-danger btn-lg">BUY NOW</button>
+                        <button class="btn btn-lg">ADD TO CARD</button>
+                        <button type="button" class="btn btn-lg" action="save-to-later" object='{"id":1,link:"","name"="Case Logic DCB-304 Compact System/Hybrid Camera Case (Black)","image":"images/thumb200x200/product26.jpg","price":"65.62 USD","user":{"name":"WilfredSmith","country":"American","status":"online"}}'>SAVE FOR LATER</button>
+                    </div>
+
+                    <div class="user-action">
+                        <button class="btn" data-toggle="modal" data-target="#pdf_modal">PDF <i class="fa fa-print"></i></button>
+                        <button class="btn" data-toggle="modal" data-target="#share_modal">Share <i class="fa fa-share-alt"></i></button>
+                        <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com." class="btn">Email <i class="fa fa-envelope-o"></i></a>
+                        <button class="btn" data-toggle="modal" data-target="#embed_modal">Embed <i class="fa fa-code"></i></button>
+                        <button class="btn" data-toggle="modal" data-target="#report_modal">Report <i class="fa fa-file-text-o"></i></button>
+                        <button class="btn" data-toggle="modal" data-target="#qr_modal">QR code <i class="fa fa-qrcode"></i></button>
+                    </div>
+                </div>
+                <!-- product info right end -->
+
+            </div>
+            <!-- product detail end -->
+
+            <!-- feature product begin -->
+            <div class="Featured-block pd20">
+                <div class="pd20">
+                    <h2 class="block-title">Featured <i class="fa fa-caret-right"></i> </h2>
+                </div>
+                <div class="row pd20">
+                    <div class="col-xs-12 col-sm-15">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href=""><img class="img-responsive" src="images/thumb200x200/product11.jpg" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <a href="">Case Logic CPL-108GY Backpack for DSLR Camera...</a>
+                            </div>
+                            <div class="price">
+                                65.62 USD
+                            </div>
+                            <div class="name-user">
+                                <i class="fa fa-square"></i> WilfredSmith
+                            </div>
+                            <div class="country">
+                                America
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-15">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href=""><img class="img-responsive" src="images/thumb200x200/product12.jpg" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <a href="">Case Logic CPL-104 DSLR Camera Holster Case (Black)</a>
+                            </div>
+                            <div class="price">
+                                69.00 USD
+                            </div>
+                            <div class="name-user">
+                                <i class="fa fa-square"></i> WilfredSmith
+                            </div>
+                            <div class="country">
+                                America
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-15">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href=""><img class="img-responsive" src="images/thumb200x200/product13.jpg" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <a href="">Case Logic 14.1-Inch Slim Case for Laptop/iPad (AUA-314ANTH)</a>
+                            </div>
+                            <div class="price">
+                                32.39 USD
+                            </div>
+                            <div class="name-user">
+                                <i class="fa fa-square"></i> WilfredSmith
+                            </div>
+                            <div class="country">
+                                America
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-15">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href=""><img class="img-responsive" src="images/thumb200x200/product14.jpg" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <a href="">Case Logic CPL-101Black Point and Shoot Camera Case (Black)</a>
+                            </div>
+                            <div class="price">
+                                159.99 USD
+                            </div>
+                            <div class="name-user">
+                                <i class="fa fa-square"></i> WilfredSmith
+                            </div>
+                            <div class="country">
+                                America
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-15">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href=""><img class="img-responsive" src="images/thumb200x200/product15.jpg" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <a href="">Case Logic iFOL-301 Purple Hard Shell Polycarbonate Folio..</a>
+                            </div>
+                            <div class="price">
+                                24.99 USD
+                            </div>
+                            <div class="name-user">
+                                <i class="fa fa-square"></i> WilfredSmith
+                            </div>
+                            <div class="country">
+                                America
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- feature product end -->
+
+            <!-- comment wrapper begin -->
+            <div class="comment-wrapper">
+                <!-- form comment begin -->
+                <div class="comment-block first">
+                    <div class="commnent-title">
+                        <div class="rate">
+                            <span class="field"> Rate this item: </span>
+                            <div class="raty" score="3.3"></div>
+                        </div>
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-reviews-img">
+                            <img src="images/thumb40x40/1.jpg" />
+                        </div>
+                        <form role="form">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Add a public feedback"></textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <button class="btn">Cancel</button>
+                                <button class="btn btn-info">Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- form comment end -->
+
+                <!-- comment begin -->
+                 <div class="comment-block">
+                    <div class="comment-content">
+                        <div class="comment-reviews-img">
+                            <img src="images/thumb40x40/1.jpg" />
+                        </div>
+                        <div class="user-info">
+                            <h4 class="name-user">
+                                <span class="tick on"><i class="fa fa-square"></i></span> 
+                                FailArmy
+                                <span class="small">2 weeks ago</span>
+                            </h4>
+                            <div class="user-country">American</div>
+                            <div class="rating">    
+                                <div class="raty" score="5"></div>
+                            </div>    
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="user-action">
+                                <a href="javascript;" class="reply">Reply</a>
+                                <a href="javascript;" class="view-reply">View all 26 replies <i class="fa fa-caret-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-block">
+                    <div class="comment-content">
+                        <div class="comment-reviews-img">
+                            <img src="images/thumb40x40/2.jpg" />
+                        </div>
+                        <div class="user-info">
+                            <h4 class="name-user">
+                                <span class="tick"><i class="fa fa-square"></i></span> 
+                                DarGadgetZ
+                                <span class="small">2 weeks ago</span>
+                            </h4>
+                            <div class="user-country">American</div>
+                            <div class="rating">    
+                                <div class="raty" score="5"></div>
+                            </div>    
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="user-action">
+                                <a href="javascript;" class="reply">Reply</a>
+                            </div>
+                        </div>
+
+                        <!-- comment reply begin -->
+                        <div class="comment-block comment-reply mt10">
+                            <div class="comment-content">
+                                <div class="comment-reviews-img">
+                                    <img src="images/thumb40x40/3.jpg" />
+                                </div>
+                                <div class="user-info">
+                                    <h4 class="name-user">
+                                        <span class="tick on"><i class="fa fa-square"></i></span> 
+                                        inspectyerbooty  
+                                        <span class="small">5 days ago</span>
+                                    </h4>
+                                    <div class="user-country">American</div>
+                                    <div class="rating">    
+                                        <div class="raty" score="5"></div>
+                                    </div>    
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <div class="user-action">
+                                        <a href="javascript;" class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment reply end -->
+
+                        <!-- comment reply begin -->
+                        <div class="comment-block comment-reply">
+                            <div class="comment-content">
+                                <div class="comment-reviews-img">
+                                    <img src="images/thumb40x40/4.jpg" />
+                                </div>
+                                <div class="user-info">
+                                    <h4 class="name-user">
+                                        <span class="tick on"><i class="fa fa-square"></i></span> 
+                                        Izzy Mendez 
+                                        <span class="small">5 days ago</span>
+                                    </h4>
+                                    <div class="user-country">American</div>
+                                    <div class="rating">    
+                                        <div class="raty" score="5"></div>
+                                    </div>    
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <div class="user-action">
+                                        <a href="javascript;" class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment reply end -->
+                    </div>
+                </div>
+                <!-- comment end -->
+            </div>
+            <!-- comment wrapper end -->
+        </section>
+        <div class="clearfix"></div>
+        <!-- footer end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <ul class="list-inline menu-bottom">
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Affiliate</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <button class="btn btn-default btn-lg bg-gray">
+                            SHOW ME A RANDOM LISTING
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <a class="logo-bottom text-center pull-right" href="#">
+                            <img class="img-responsive" src="images/logo.jpg" alt="" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <!-- modal pdf begin -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="pdf_modal">
+           <div class="modal-dialog modal-lg">
+             <div class="modal-content">              
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">PDF File Preview</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="pdf_preview">
+                        <iframe frameborder="0" width="100%" height="600"></iframe>
+                    </div>
+                </div>                
+             </div>
+           </div>
+        </div>
+        <!-- modal pdf end -->
+
+        <!-- modal share code begin -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="share_modal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Share</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="grid-share">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-facebook"></i>
+                                <span class="grid-title">Facebook</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-qq"></i>
+                                <span class="grid-title">QQ</span>
+                            </a>
+                            <a href="whatsapp://send?text=http://www.mydomain.com" data-action="share/whatsapp/share" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-whatsapp"></i>
+                                <span class="grid-title">WhatsApp</span>
+                            </a>
+                            <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com&title=%post_title%" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i aria-hidden="true" class="icon-qzone"></i>
+                                <span class="grid-title">QZone</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-weixin"></i>
+                                <span class="grid-title">WeChat</span>
+                            </a>
+                            <a href="https://twitter.com/home?status=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-twitter"></i>
+                                <span class="grid-title">Twitter</span>
+                            </a>
+                            <a href="https://plus.google.com/share?url=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-google-plus"></i>
+                                <span class="grid-title">Google+</span>
+                            </a>
+                             <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-instagram"></i>
+                                <span class="grid-title">Instagram</span>
+                            </a>
+                            <a href="http://tieba.baidu.com/i/app/open_share_api?link=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i aria-hidden="true" class="icon-baidu"></i>
+                                <span class="grid-title">Baidu Tieba</span>
+                            </a>
+                            <a href="viber://forward?text=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-viber"></i>
+                                <span class="grid-title">Viber</span>
+                            </a>
+                            <a href="http://tumblr.com/widgets/share/tool?canonicalUrl=http://example.com&content=%content%&posttype=link&title=%post_title%&caption=%caption%&tag=%tag&" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-tumblr"></i>
+                                <span class="grid-title">Tumblr </span>
+                            </a>
+                            <a href="http://line.me/R/msg/text/?http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <img src="images/icons/icon-line.png" class="grid-icon-img">
+                                <span class="grid-title">Line</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-snapchat"></i>
+                                <span class="grid-title">Snapchat</span>
+                            </a>
+                            <a href="http://service.weibo.com/share/share.php?url=http://example.com&title=%post_title%" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa icon-weibo"></i>
+                                <span class="grid-title">Sina Weibo</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <img src="images/icons/icon-vk.png" class="grid-icon-img">
+                                <span class="grid-title">VKontakte</span>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?url=http://example.com&mini=true" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-linkedin"></i>
+                                <span class="grid-title">LinkedIn</span>
+                            </a>
+                            <a href="https://www.reddit.com/submit?url=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-reddit-alien"></i>
+                                <span class="grid-title">Reddit</span>
+                            </a>
+                            <a href="https://www.pinterest.com/pin/create/button/?url=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-pinterest"></i>
+                                <span class="grid-title">Pinterest</span>
+                            </a>
+                            <a href="http://www.stumbleupon.com/badge/?url=http%3A//example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-stumbleupon"></i>
+                                <span class="grid-title">StumbleUpon</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <i class="fa fa-digg"></i>
+                                <span class="grid-title">Digg</span>
+                            </a>
+                            <a href="http://connect.odnoklassniki.ru/dk?st.cmd=WidgetShare&amp;st.shareUrl=http%3A//servicelinks.altervista.org/%3Fq%3Dservice/odnoklassniki-share-button" title="Share it on Odnoklassniki" class="grid-icon col-xs-3 col-sm-15 service-links--ru-odnoklassniki-share-button" rel="nofollow" target="_blank">
+                                <i class="fa fa-odnoklassniki"></i>
+                                <span class="grid-title">Odnoklasniki</span>
+                            </a>
+                            <a href="http://www.livejournal.com/update.bml?subject=Subject&event=Event" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <div class="grid-icon-img">
+                                    <svg width="64px" height="64px" viewBox="0 0 25 25"><path fill="#21A5D8" d="M10.845,3.224L7.618,0H7.611C4.203,1.492,1.473,4.237,0,7.655l3.232,3.227c1.471-3.418,4.202-6.161,7.609-7.654l0.006,0.001C10.847,3.229,10.896,3.202,10.845,3.224"></path><path fill="#003040" d="M23.647,19.232c-1.979,0.867-3.564,2.463-4.421,4.446l5.578,1.154L23.647,19.232z"></path><path fill="#FFFFFF" d="M23.647,19.234c-0.448-2.141-0.854-4.076-0.854-4.076l-0.004,0.001c-3.404,1.493-6.138,4.237-7.609,7.654l4.046,0.865C20.084,21.702,21.673,20.1,23.647,19.234"></path><path fill="#003040" d="M15.18,22.813c1.473-3.417,4.205-6.162,7.61-7.655h0.002L10.847,3.229l-0.006-0.001c-3.408,1.493-6.14,4.238-7.611,7.657L15.18,22.813z"></path></svg>
+                                </div>
+                                <span class="grid-title">LiveJounal</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <img src="images/icons/icon-skyrock.png" class="grid-icon-img">
+                                <span class="grid-title">Skyrock</span>
+                            </a>
+                            <a href="#" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <img src="images/icons/icon-ameba.png" class="grid-icon-img">
+                                <span class="grid-title">Ameba</span>
+                            </a>
+                            <a href="https://www.blogger.com/blog-this.g?u=http://example.com" class="grid-icon col-xs-3 col-sm-15" target="blank_">
+                                <img src="images/icons/icon-blogger.png" class="grid-icon-img">
+                                <span class="grid-title">Blogger</span>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- modal share code end -->
+
+
+        <!-- modal email begin -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="embed_modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Embed</h4>
+                </div>
+                <form role="form">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <textarea id="iframe" class="form-control js-copytextarea" rows="3" readonly="">&lt;iframe width="640" height="360" src="https://www.trovetrek.com/embed/JN7BeFMr3Qg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">                
+                    <div class="text-center">
+                        <button type="button" class="btn btn-info" onclick="CopyToClipboard('.js-copytextarea');">Copy</button>
+                    </div>
+                </div>
+              </form>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- modal email end -->
+
+        <!-- modal qr code begin -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="qr_modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=trevotrek&amp;qzone=1&amp;margin=0&amp;size=200x200&amp;ecc=L" alt="qr code" />
+                </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- modal qr code end -->
+
+        <!-- modal report begin -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="report_modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Report</h4>
+                </div>
+                <form role="form">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Messages</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">    
+                    <button type="button" class="btn btn-info">Send</button>                   
+                </div>
+              </form>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- modal report end -->
+
+        <!-- facebook script -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- tumblr js -->
+        <script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://secure.assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
+        
+        <!-- js -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <!-- Rating core JS file -->
+        <script src="js/raty/jquery.raty.js"></script>
+        <!-- Magnific Popup core JS file -->
+        <script src="js/magnific-popup/jquery.magnific-popup.js"></script>
+        <!-- Cloud Zoom core JS file -->
+        <script src="js/cloud-zoom/cloud-zoom.js"></script>
+        <!-- Scripts in development mode -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+        <script type="text/javascript">
+            var pdf = new jsPDF('p','pt','a4');
+                pdf.addHTML(document.body,function() {
+                var string = pdf.output('datauristring');
+                $('#pdf_preview iframe').attr('src', string);
+            });
+        </script>
+        <script src="js/init.js"></script>
+        <!-- js end -->
+    </body>
+</html> 

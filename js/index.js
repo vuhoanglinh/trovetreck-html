@@ -1,0 +1,130 @@
+$(document).ready(function(){
+    if($('.featured-block-hightlight').length > 0) {
+        var owl = $('.featured-block-hightlight');
+        owl.owlCarousel({
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                        items:2
+                },
+                600:{
+                        items:3
+                },
+                960:{
+                        items:5
+                },
+                1200:{
+                        items:5
+                }
+            }
+        });
+    }
+});
+$(document).ready(function(){
+    if($('.following-block-hightlight').length > 0) {
+        var owl = $('.following-block-hightlight');
+        owl.owlCarousel({
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                        items:2
+                },
+                600:{
+                        items:3
+                },
+                960:{
+                        items:5
+                },
+                1200:{
+                        items:5
+                }
+            }
+        });
+    }
+});
+$(document).ready(function(){
+    if($('.newest-block-hightlight').length > 0) {
+        var owl = $('.newest-block-hightlight');
+        owl.owlCarousel({
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                        items:2
+                },
+                600:{
+                        items:3
+                },
+                960:{
+                        items:5
+                },
+                1200:{
+                        items:5
+                }
+            }
+        });
+    }
+});
+$(document).ready(function(){
+    if($('.trending-block-hightlight').length > 0) {
+        var owl = $('.trending-block-hightlight');
+        owl.owlCarousel({
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                        items:2
+                },
+                600:{
+                        items:3
+                },
+                960:{
+                        items:5
+                },
+                1200:{
+                        items:5
+                }
+            }
+        });
+    }
+});
+$(document).ready(function(){
+    if($('.promoted-block-hightlight').length > 0) {
+        var owl = $('.promoted-block-hightlight');
+        owl.owlCarousel({
+            loop:true,
+            margin:0,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                        items:2
+                },
+                600:{
+                        items:3
+                },
+                960:{
+                        items:5
+                },
+                1200:{
+                        items:5
+                }
+            }
+        });
+    }
+});

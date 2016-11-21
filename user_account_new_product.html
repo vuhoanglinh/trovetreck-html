@@ -1,0 +1,538 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TroveTrek</title>
+        <!-- meta tag seo -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Favicons -->
+        <link rel="shortcut icon" type='image/x-icon' href="images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+        <link rel="apple-touch-icon-precomposed" href="">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <!-- font awesome -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/flag-icon.css">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/color.css">
+        <link rel="stylesheet" type="text/css" href="css/utilities.css"> 
+        <!-- Chosen core CSS file -->
+        <link rel="stylesheet" href="js/chosen/jquery.chosen.css">
+    </head>
+    <body>
+        <!--main naviagtion begin -->
+        <nav class="navigation topbar bg-gray">
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default navbar-static-top no-magin">
+                            <div class="navbar-header header-block">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand logo" href="#">
+                                    <img class="img-responsive" src="images/logo.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <form class="col-xs-12 input-group search">
+                                            <input class="form-control form-search" type="text">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-danger" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </form>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter <span class="caret"></span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="flag-icon flag-icon-ad"></i> English</a></li>
+                                            <li><a href="#"><i class="flag-icon flag-icon-vn"></i> Vietnamese</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USD <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-usd"></i> USD</a></li>
+                                            <li><a href="#"><i class="fa fa-rupee"></i> Rupee</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Worldwide <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="flag-icon flag-icon-ag"></i> Argentina</a></li>
+                                            <li><a href="#"><i class="flag-icon flag-icon-vn"></i> Vietnamese</a></li>
+                                            <li class="more-worldwide text-center"><a href="#" >More Country <i class="fa fa-angle-right"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <div class="cart-block  hidden-xs">
+                                            <i class="fa fa-shopping-cart"></i>(0)
+                                        </div>
+                                    </li>
+                                    <li><a class="" href="">Sign in</a></li>
+                                    <li><a href="">Upload</a></li>
+                                    <li><a href="" class="user-avatar-setting"><img class="img-circle" src="images/thumb40x40/user1.jpg" width="40" height="40"></a></li>
+                                </ul>
+
+                            </div><!--/.nav-collapse -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--main naviagtion end -->
+        <div class="clearfix"></div>
+        <!-- content begin -->
+        <!-- user info begin -->
+        <section class="user-account">
+            <!-- user info begin -->
+            <div class="container text-center">
+                <div class="user-profile-info">
+                    <div class="user-avatar">
+                        <img src="images/thumb120x120/1.jpg">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">WilfredSmith</div>
+                        <div class="user-country">America</div>
+                        <div class="user-tresor">
+                            My Tresors: <span>2000M</span> XTR
+                        </div>
+                        <div class="rating">    
+                            <div class="rate">
+                                <span class="field"> Saler </span>
+                                <span class="start">
+                                    <img src="images/icons/rating/icon_01.png">
+                                    
+                                    <img src="images/icons/rating/icon_01.png">
+                                    
+                                    <img src="images/icons/rating/icon_01.png">
+                                    
+                                    <img src="images/icons/rating/icon_02.png">
+                                    
+                                    <img src="images/icons/rating/icon_03.png">
+                                </span>
+                            </div>
+                            <div class="rate">
+                                <span class="field">Buyer </span>
+                                <span class="start">
+                                    <img src="images/icons/rating/icon_04.png">
+                                    
+                                    <img src="images/icons/rating/icon_04.png">
+                                    
+                                    <img src="images/icons/rating/icon_04.png">
+                                    
+                                    <img src="images/icons/rating/icon_05.png">
+                                    
+                                    <img src="images/icons/rating/icon_06.png">
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- user info end -->
+        </section>
+        <!-- user info end -->
+
+        <!-- nav begin -->
+        <nav class="navbar user-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Funds</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Edit profile</a></li>
+                <li><a href="#">Following</a></li>
+                <li><a href="#">Collections</a></li>
+                <li class="active"><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Metrics</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Address</a></li>
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Setting</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- content begin -->
+        <section class="container main-content">
+            <h3 class="title-red">Create New Product</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+            <form role="form" class="form-user">
+                <!-- left begin -->
+                <div class="col-md-6 no-padding-left">
+                    <div class="">
+                      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-12 control-label">Title: <span class="pull-right text-red label-counter1">100</span></label>
+                              <div class="col-md-12">
+                                  <input type="text" class="form-control input-counter" data-limit="100" data-counter=".label-counter1" maxlength="100">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="form-group">
+                          <div class="row">
+                              <label class="col-md-12 control-label">Profile desctiption: <span class="pull-right text-red label-counter2">1000</span></label>
+                              <div class="col-md-12">
+                               <textarea class="form-control input-counter" data-limit="1000" data-counter=".label-counter2" rows="5" maxlength="1000"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="row">
+                            <div class="col-md-8">
+                              <label class="control-label">Price:</label>
+                              <input type="text" class="form-control" placeholder="00.00">
+                            </div>  
+                            <div class="col-md-4">
+                              <label class="control-label">Currency:</label>
+                              <select class="form-control">
+                                <option>USD</option>
+                                <option>VND</option>
+                              </select>
+                            </div> 
+                          </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="text-left">
+                          <label>Acceptable Payment Methods:</label>
+                          <div class="checkbox">
+                            <label class="col-md-4">
+                              <input type="checkbox"> Stripe
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Paypal
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Money Order
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Cashier’s Check
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Personal Check
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Personal Check
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Cash on Delivery
+                            </label>
+                            <label class="col-md-4">
+                              <input type="checkbox"> Order
+                            </label>
+                          </div>
+                        </div>
+                      </div>                      
+                      <div class="form-group">
+                        <label for="InputFile">Upload prictures: (You can upload nine image)</label>
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                        <input type="file" name="file[]" id="InputFile">
+                      </div>  
+                      <div class="form-group">
+                        <div class="row">
+                            <label class="col-md-12 control-label">Video:</label>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" >
+                                <p class="help-block text-center">(You can be embedded from a video sharing website)</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- left end -->
+                <!-- right begin -->
+                <div class="col-md-6 no-padding-right">
+                    <div class="">
+                      <div class="form-group">
+                        <div class="text-left">
+                          <div class="checkbox">
+                            <label class="no-padding-left">Digital Product</label>
+                            <label>
+                              <input type="checkbox"> Yes
+                            </label>
+                            <label>
+                              <input type="checkbox"> No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="InputFile">Upload file:</label>
+                        <input type="file" id="InputFile">
+                      </div>    
+                      <div class="form-group">
+                        <div class="row">
+                            <label class="col-md-12 control-label">Download link:</label>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label class="control-label">Condition:</label>
+                              <select class="form-control">
+                                <option>New</option>
+                              </select>
+                            </div>  
+                            <div class="col-md-6">
+                              <label class="control-label">Quantity:</label>
+                              <input type="text" class="form-control">
+                            </div>  
+                            <div class="col-md-12">
+                              <label class="control-label">Shipping method:</label>
+                              <select class="form-control" id="shipping" action="show" data="#easy_api">
+                                <option>Pick up</option>
+                                <option>Fixed price</option>
+                                <option>Free shipping</option>
+                                <option value="easy_api">Easypost API</option>
+                              </select>
+                            </div> 
+                            <div class="col-md-12 easy-api" id="easy_api">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                      <select class="form-control">
+                                        <option>Select Carrier</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <select class="form-control">
+                                        <option>Select Carrier Service</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <select class="form-control" action="show" data=".predefine">
+                                        <option value="pre">Predefine Package</option>
+                                        <option value="other">Other</option>
+                                      </select>
+                                        <div class="col-md-12 predefine" id="pre" style="display:block">
+                                            <label class="control-label">Length</label>
+                                            <div class="form-group-inline fix-width">
+                                                <input type="text" class="form-control" placeholder="00">
+                                                <label class="control-label">KG</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 predefine" id="other">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label class="control-label">Length</label>
+                                                    <input type="text" class="form-control" placeholder="00">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="control-label">Width</label>
+                                                    <input type="text" class="form-control" placeholder="00">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="control-label">Height</label>
+                                                    <input type="text" class="form-control" placeholder="00">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="control-label">Weight</label>
+                                                    <input type="text" class="form-control" placeholder="00">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <label class="control-label">Address item:</label>
+                                      <select class="form-control">
+                                        <option>Address 1:</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-12 form-group-inline">
+                                        <label class="control-label">Do you want to ship your product international?</label>
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="inter" action="show" data="#inter"> Yes
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-12 inter" id="inter" style="display:none">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <select class="form-control">
+                                            <option>Select Carrier</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <select class="form-control">
+                                            <option>Select Carrier Service</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>Custom info</label>                  
+                                            <div class="col-md-12">
+                                                <label class="control-label">Hs tariff number:</label>
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label class="control-label">Eel pfc:</label>
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label class="control-label">Customs signer:</label>
+                                               <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label class="control-label">Contents explanation:</label>
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label>Contents type:</label>
+                                              <select class="form-control">
+                                                <option>Merchandise</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label>Non delivery option:</label>
+                                              <select class="form-control">
+                                                <option>Abandon</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label>Restriction type:</label>
+                                              <select class="form-control">
+                                                <option>None</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-12">
+                                              <label>Restriction comments:</label>
+                                              <select class="form-control">
+                                                <option>None</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="control-label">Add To Collection:</label>
+                          <select class="form-control">
+                            <option>None</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                        <p>‘Get more views! Feature your product on the homepage, in relevant search pages, and on relevant product listing pages. Make sure that your account is funded, and simply enter your maximum bid per click.’</p>
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 form-group-inline">
+                                <label class="control-label">Enter maximum bid per click:</label>
+                                <input type="text" class="form-control" placeholder="00">
+                                <label class="control-label">Tresors</label>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group text-right">   
+                        <button class="btn btn-default">CANCEL</button>  
+                        <button class="btn btn-info">UPLOAD</button>
+                      </div>
+                    </div>
+                </div>    
+                <!-- right end -->
+            </form>
+        </section>
+        <!-- content end -->
+        <!-- nav end -->
+        <div class="clearfix"></div>
+        <!-- footer end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <ul class="list-inline menu-bottom">
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Affiliate</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <button class="btn btn-default btn-lg bg-gray">
+                            SHOW ME A RANDOM LISTING
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <a class="logo-bottom text-center pull-right" href="#">
+                            <img class="img-responsive" src="images/logo.jpg" alt="" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+
+        <!-- modal pdf begin -->
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              
+            </div>
+          </div>
+        </div>
+        <!-- modal pdf end -->
+
+
+
+        <!-- js -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <!-- Chosen core JS file -->
+        <script src="js/chosen/jquery.chosen.js"></script>
+        <script src="js/init.js"></script>
+        <!-- js end -->
+    </body>
+</html> 

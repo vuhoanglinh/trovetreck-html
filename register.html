@@ -1,0 +1,83 @@
+<html ng-app="appTroveTrek">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <!-- meta tag seo -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" type='image/x-icon' href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,500italic,500,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/utilities.css">
+</head>
+<body class="bg-gray" ng-controller="RegisterCtrl">
+    <div class="col-xs-12 ">
+        <a class="col-xs-12 navbar-brand logo text-center" href="#">
+            <img class="img-responsive center-block" src="images/logo.jpg" alt="" />
+        </a>
+    </div>
+    <section class="container">
+        <div class="signin-page">
+            <h2 class="text-center text-uppercase">Register</h2>
+            <div class="form-signin bg-while">
+                <div class="form-group">
+                    <div class="form-inline">
+                        <label>Username</label>
+                        <span class="pull-right">less than <span class="text-color-red">{{50 - user.name.length}}</span>  characters</span>
+                    </div>
+                     <input type="text" name="username" class="form-control" ng-model="user.name" ng-maxlength = "50" required />
+                </div>
+                <div class="form-group">
+                    <div class="form-inline">
+                        <label>Email</label>
+                        <span class="pull-right">less than <span class="text-color-red">{{50 - user.email.length}}</span> characters</span>
+                    </div>
+                    <input type="text" class="form-control" ng-model="user.email">
+                </div>
+                <div class="form-group">
+                    <div class="form-inline">
+                        <label>Password</label>
+                        <span class="pull-right">less than <span class="text-color-red">{{50 - user.password.length}}</span> characters</span>
+                    </div>
+                    <input type="password" class="form-control" ng-model="user.password" />
+                </div>
+                <button type="submit" class="btn btn-lg btn-danger btn-block">Register</button>
+                <p class="text-left mt10">By signing in I agree to the <a href="">terms of use.</a></p>
+                <p class="text-left mt30">Already have an account? <a href="">Sign in</a></p>
+            </div>
+        </div>
+    </section>
+    <footer class="signin-footer">
+        <div class="container ">
+            <div class="col-xs-12 col-sm-12">
+                <div class="row ">
+                    <ul class="list-inline menu-bottom text-center">
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Affiliate</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- js -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- js end -->
+</body>
+</html>
